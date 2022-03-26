@@ -44,10 +44,22 @@ O sistema está dividido em: Lorem Ipsum is simply dummy.
 
 <br />
 
-## :wrench: Colocando o projeto para rodar
+## :wrench: Configurando o projeto
 <br />
 
-Instruções para o funcionamento do projeto:
+Para utilizar o sistema, será necessário criar um banco de dados no Mysql.
+Seguem scripts:
+
+CREATE DATABASE portal_noticias;
+
+CREATE TABLE `noticias` (
+  `id_noticias` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(100) DEFAULT NULL,
+  `noticia` text,
+  `data_criacao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_noticias`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -68,11 +80,6 @@ O site tem as seguintes telas:
 
 </p>
 
-<p align="center">
-  <img alt="cadastro-anuncio" src="images/news.png" margin-right="20px" /><br />
-
-</p>
-
 <br />
 
 ## :memo: License
@@ -83,9 +90,9 @@ O site tem as seguintes telas:
 
 ## :wave: Social
 
-Me siga JutaiCS nas redes Sociais :wink:
+Me siga Jutai C.S nas redes Sociais :wink:
 <br />
 
-- [Instagram](https://www.instagram.com/)
-- [LinkedIn](https://www.linkedin.com/)
+- [Instagram](https://www.instagram.com/jutaics/)
+- [LinkedIn](https://www.linkedin.com/in/jutai-de-carvalho-santos-92483b27/)
 
