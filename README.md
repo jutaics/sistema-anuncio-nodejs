@@ -52,13 +52,18 @@ Seguem scripts:
 
 CREATE DATABASE portal_noticias;
 
+-- portal_noticias.noticias definition
+
 CREATE TABLE `noticias` (
-  `id_noticias` int(11) NOT NULL AUTO_INCREMENT,
+  `id_noticia` int(11) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(100) DEFAULT NULL,
   `noticia` text,
   `data_criacao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id_noticias`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `resumo` varchar(100) DEFAULT NULL,
+  `autor` varchar(30) DEFAULT NULL,
+  `data_noticia` date DEFAULT NULL,
+  PRIMARY KEY (`id_noticia`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
