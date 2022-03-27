@@ -1,10 +1,7 @@
-var dbConnection = require('../../config/dbConnection');
-const res = require('express/lib/response');
-
-module.exports = function(app){
-
-    var connection = dbConnection();
-    app.get('/noticias', function(req, res){     
+module.exports = function(app){ 
+    app.get('/noticias', function(req, res){   
+        
+        var connection = app.config.dbConnection();
    
         connection.query('select * from noticias', function(erro, result){
             //res.send(result);
