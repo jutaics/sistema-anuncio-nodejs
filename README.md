@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="mural digital" src="images/logo.png" height="320px" /> <br /> <br />
+    <img alt="mural digital" src="public/images/logo.png" height="320px" /> <br /> <br />
     Sistema de Cadastro de Anúncio - NodeJS
 </h1>
 
@@ -81,7 +81,7 @@ electronic typesetting, remaining essentially unchanged.
 O site tem as seguintes telas:
 
 <p align="center">
-  <img alt="cadastro-anuncio" src="images/news.png" margin-right="20px" /><br />
+  <img alt="cadastro-anuncio" src="public/images/logo.png" margin-right="20px" /><br />
 
 </p>
 
