@@ -79,10 +79,34 @@ CREATE TABLE `noticias` (
 ## :sparkles: Protótipo do site
 <br />
 
-O site tem as seguintes telas:
+
+Tela Home:
+<br />
 
 <p align="center">
-  <img alt="cadastro-anuncio" src="app/public/images/logo.png" margin-right="20px" /><br />
+  <img alt="cadastro-anuncio" src="app/git/images/home.png" margin-right="20px" /><br />
+
+</p>
+
+<br />
+
+
+Tela de Notícias:
+<br />
+
+<p align="center">
+  <img alt="cadastro-anuncio" src="app/git/images/noticias.png" margin-right="20px" /><br />
+
+</p>
+
+<br />
+
+
+Tela de Inclusão de Notícias:
+<br />
+
+<p align="center">
+  <img alt="cadastro-anuncio" src="app/git/images/formulario_inclusao_noticia.png" margin-right="20px" /><br />
 
 </p>
 
