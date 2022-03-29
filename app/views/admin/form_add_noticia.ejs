@@ -4,13 +4,13 @@
 		<meta charset="UTF-8">
 
 		<title>Portal de notícias</title>
-		
+
 		<!-- JQuery -->
 		<script src="js/jquery-2.2.1.js"></script>
 
 		<!-- bootstrap - link cdn -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	
+
 		<!-- incluindo css -->
 		<link href="css/style.css" rel="stylesheet">
 
@@ -29,13 +29,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					
-					<img src="images/logo.png" />
+
+					<a href="/"><img src="images/logo.png" /></a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">HOME</a></li>
+						<li><a href="/noticias">NOTICÍAS</a></li>
+						<li><a href="/formulario_inclusao_noticia">CADASTRAR NOTICÍA</a></li>
 					</ul>
 				</div>
 			</div>
@@ -43,15 +44,16 @@
 
 
 	    <div class="container">
-		
-			<% if(validacao.length > 0){ %>
+			<h3>Cadastrar uma nova notícia</h3>
+			<br />
+			<% if (validacao.length > 0) { %>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="alert alert-danger">
 							<strong>Atenção!</strong>
 							<ul>
-								<% for(var i = 0; i < validacao.length; i++){ %>
-									<li><%= validacao[i].msg %></li>
+								<% for (var i = 0; i < validacao.length; i++) { %>
+								<li><%= validacao[i].msg %></li>
 								<% } %>
 							</ul>
 						</div>
@@ -61,30 +63,30 @@
 
 	    	<div class="row">
 	    		<div class="col-md-12">
-	    			<form action="/noticias/salvar" method="POST">
+	    			<form action="/noticias_salvar" method="post">
 						<div class="form-group">
 							<label for="titulo">Título:</label>
-							<input type="text" class="form-control" id="titulo" name="titulo">
+							<input type="text" class="form-control" id="titulo" name="titulo" value="<%= noticia.titulo %>">
 						</div>
 
 						<div class="form-group">
 							<label for="pwd">Resumo:</label>
-							<input type="text" class="form-control" id="resumo" name="resumo">
+							<input type="text" class="form-control" id="resumo" name="resumo" value="<%= noticia.resumo %>">
 						</div>
-						
+
 						<div class="form-group">
 							<label for="pwd">Autor:</label>
-							<input type="text" class="form-control" id="autor" name="autor">
+							<input type="text" class="form-control" id="autor" name="autor" value="<%= noticia.autor %>">
 						</div>
 
 						<div class="form-group">
 							<label for="pwd">Data:</label>
-							<input type="date" class="form-control" id="data_noticia" name="data_noticia">
+							<input type="date" class="form-control" id="data_noticia" name="data_noticia" value="<%= noticia.data_noticia %>">
 						</div>
 
 						<div class="form-group">
 							<label for="pwd">Notícia:</label>
-							<textarea class="form-control" id="noticia" name="noticia"></textarea>
+							<textarea class="form-control" id="noticia" name="noticia"><%= noticia.noticia %></textarea>
 						</div>
 
 
@@ -93,8 +95,8 @@
 		    	</div>
 	    	</div>
 	    </div>
-	
+
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	
+
 	</body>
 </html>

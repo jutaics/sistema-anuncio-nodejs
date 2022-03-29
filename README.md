@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="mural digital" src="public/images/logo.png" height="320px" /> <br /> <br />
+    <img alt="mural digital" src="app/public/images/logo.png" height="320px" /> <br /> <br />
     Sistema de Cadastro de Anúncio - NodeJS
 </h1>
 
@@ -13,8 +13,7 @@
 
 ## :bookmark: O problema
 
-A empresa XYZ, decidiu criar uma página para atender a demanda de anúcios para um mural on-line, com o objetivo de 
-acabar com o uso de post-it e caneta.
+A empresa XYZ, decidiu criar uma página para atender a demanda de anúcios para um mural on-line, com o objetivo de acabar com o uso de insumos.
 
 <br />
 
@@ -39,7 +38,11 @@ O projeto é muito simples e conta com as seguintes tecnologias:
 ## :package: Funcionamento do sistema
 <br />
 
-O sistema está dividido em: Lorem Ipsum is simply dummy.
+O sistema está dividido em: 
+
+- Tela de Cadastro
+- Tela de Visualização de Notícias
+- Tela de Visualização de Notícia por item selecionado na grid
 
 
 <br />
@@ -48,29 +51,27 @@ O sistema está dividido em: Lorem Ipsum is simply dummy.
 <br />
 
 Para utilizar o sistema, será necessário criar um banco de dados no Mysql.
+<br />
 Seguem scripts:
 
+Banco de Dados:
+```sql
 CREATE DATABASE portal_noticias;
+```
 
--- portal_noticias.noticias definition
-
+Tabela Notícias:
+```sql
 CREATE TABLE `noticias` (
   `id_noticia` int(11) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(100) DEFAULT NULL,
   `noticia` text,
-  `data_criacao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `data_criacao` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `resumo` varchar(100) DEFAULT NULL,
   `autor` varchar(30) DEFAULT NULL,
   `data_noticia` date DEFAULT NULL,
   PRIMARY KEY (`id_noticia`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-when an unknown printer took a galley of type and scrambled it to make a type 
-specimen book. It has survived not only five centuries, but also the leap into 
-electronic typesetting, remaining essentially unchanged. 
+);
+```
 
 
 <br />
@@ -81,7 +82,7 @@ electronic typesetting, remaining essentially unchanged.
 O site tem as seguintes telas:
 
 <p align="center">
-  <img alt="cadastro-anuncio" src="public/images/logo.png" margin-right="20px" /><br />
+  <img alt="cadastro-anuncio" src="app/public/images/logo.png" margin-right="20px" /><br />
 
 </p>
 
