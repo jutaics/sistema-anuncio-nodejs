@@ -84,7 +84,7 @@ Tela Home:
 <br />
 
 <p align="center">
-  <img alt="cadastro-anuncio" src="app/git/images/home.png" margin-right="20px" /><br />
+  <img alt="cadastro-anuncio" src="git/images/home.png" margin-right="20px" /><br />
 
 </p>
 
@@ -95,7 +95,7 @@ Tela de Notícias:
 <br />
 
 <p align="center">
-  <img alt="cadastro-anuncio" src="app/git/images/noticias.png" margin-right="20px" /><br />
+  <img alt="cadastro-anuncio" src="git/images/noticias.png" margin-right="20px" /><br />
 
 </p>
 
@@ -106,7 +106,7 @@ Tela de Inclusão de Notícias:
 <br />
 
 <p align="center">
-  <img alt="cadastro-anuncio" src="app/git/images/formulario_inclusao_noticia.png" margin-right="20px" /><br />
+  <img alt="cadastro-anuncio" src="git/images/formulario_inclusao_noticia.png" margin-right="20px" /><br />
 
 </p>
 
